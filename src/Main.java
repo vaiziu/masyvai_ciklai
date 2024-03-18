@@ -143,6 +143,7 @@ public class Main {
                 }
             }
         }
+
         System.out.println("--------------------");
 //9. Suskaičiuokite kiek 3čio uždavinio masyve yra žodžių trumpesnių nei 5 simboliai,
 // ir kiek ilgesnių nei 7 simboliai. (du skaičiavimai)
@@ -202,6 +203,7 @@ public class Main {
 //        Skaičiai didesni nei 275 turi būti atspausdinti skliausteliuose” [ ] “
 
         System.out.println("--------sunkesni-1---------");
+
         int count = 0;
         for (int i = 0; i < 300; i++) {
             int randomNum =(int) (Math. random() * 300  );
@@ -220,32 +222,65 @@ public class Main {
         System.out.println(count);
 
 
+        System.out.println("--------sunkesni-2---------");
 
-
-
-
-
-
-//        sunkesni 2
-
-//        Vienoje eilutėje atspausdinkite visus skaičius nuo 1 iki 3000,
+//       sunkesni 2.
+//       Vienoje eilutėje atspausdinkite visus skaičius nuo 1 iki 3000,
 //        kurie dalijasi iš 77 be liekanos.
 //        Skaičius atskirkite kableliais.
 //        Po paskutinio skaičiaus kablelio neturi būti.
 
+String result = "";
+
+        for (int i = 1; i <= 3000; i++) {
+            if (i % 77 == 0) {
+//                System.out.print (i + ",");
+               result += i + ",";
+            }
+
+        }
+        System.out.println(result.length()-1);
+        System.out.println( result.substring(0,result.length()-1) );
+
+
+//        String comma = "";
+//
+//        for (int i = 77; i < 3000; i+=77) {
+//            System.out.print(comma + i);
+//            comma = ",";
+//        }
+        // 77,154,231,308
 
 
 
+        System.out.println("--------sunkesni-3---------");
 
+        //        Nupieškite kvadratą iš “*”, kurio kraštines sudaro 25“*”
 
+            for (int y = 1; y < 25; y++) {
+                for (int x = 1; x < 25; x++) {
+                    System.out.print( " * ");
+                }
+                System.out.println();
+            }
 
+        System.out.println("--------sunkesni-4---------");
+//        Prieš tai nupieštam kvadratui nupieškite istrižaines zaigzdutę pakeisdami kitu simboliu.
 
+        for (int y = 1; y < 25; y++) {
+            for (int x = 1; x < 25; x++) {
+                if (x == y) {
+                    System.out.print(" Y ");
+                } else if ((x+y) == 25) {
 
+                    System.out.print(" Y ");
 
-
-
-
-
+                } else {
+                    System.out.print(" * ");
+                }
+            }
+            System.out.println();
+        }
 
 
 
