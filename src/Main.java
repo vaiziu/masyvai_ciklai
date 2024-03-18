@@ -32,44 +32,44 @@ public class Main {
 //3
         System.out.println("-----3------");
 
-        String[] plant = new String[10];
-        plant[0] = "Berzas";
-        plant[1] = "gele";
-        plant[2] = "krumas";
-        plant[3] = "samana";
-        plant[4] = "kerpe";
-        plant[5] = "grybas";
-        plant[6] = "uosis";
-        plant[7] = "pusis";
-        plant[8] = "kenis";
-        plant[9] = "egle";
+        String[] plants = new String[10];
+        plants[0] = "Berzas";
+        plants[1] = "gele";
+        plants[2] = "krumas";
+        plants[3] = "samana";
+        plants[4] = "kerpe";
+        plants[5] = "grybas";
+        plants[6] = "uosis";
+        plants[7] = "pusis";
+        plants[8] = "kenis";
+        plants[9] = "egle";
 
 
 //        System.out.println("-----3------");
 //
-//        String[] plant = new String[12];
-//        plant[0] = "Berzas";
-//        plant[1] = "gele";
-//        plant[2] = "krumas";
-//        plant[3] = "samana";
-//        plant[4] = "kerpe";
-//        plant[5] = "grybas";
-//        plant[6] = "uosis";
-//        plant[7] = "pusis";
-//        plant[8] = "kenis";
-//        plant[9] = "egle";
-//        plant[10] = "azuolas";
-//        plant[11] = "liepa";
+//        String[] plants = new String[12];
+//        plants[0] = "Berzas";
+//        plants[1] = "gele";
+//        plants[2] = "krumas";
+//        plants[3] = "samana";
+//        plants[4] = "kerpe";
+//        plants[5] = "grybas";
+//        plants[6] = "uosis";
+//        plants[7] = "pusis";
+//        plants[8] = "kenis";
+//        plants[9] = "egle";
+//        plants[10] = "azuolas";
+//        plants[11] = "liepa";
 
-//        for (int i =plant.length-1; i >=0; i--) {
-//            System.out.println(plant[i]);
+//        for (int i =plants.length-1; i >=0; i--) {
+//            System.out.println(plants[i]);
 //        }
 
 //4.
         System.out.println("-----4------");
 
-        for (int i = 0; i < plant.length; i++) {
-            System.out.println(plant[i]);
+        for (int i = 0; i < plants.length; i++) {
+            System.out.println(plants[i]);
         }
 
 
@@ -78,7 +78,7 @@ public class Main {
 
         System.out.println("-----5------");
         for (int i = 9; i >= 0; i--) {
-            System.out.println(plant[i]);
+            System.out.println(plants[i]);
         }
 
 //6.Atspausdinkite kas antrą skaičių nuo 10 iki 50 (porinius).
@@ -93,9 +93,9 @@ public class Main {
 //        for (int i = 10; i <= 100; i=i*3) {
 //                System.out.println(i);
 //        }
-//7,Atspausdinkite kas antrą skaičių nuo 10 iki 50. (porinius)
-// Jei skaičius dalinasi iš 10 be liekanos jo nespausdinkite. ( naudokite continue.)
-// (atspausdinti visus porinus skaičius, išskyrus tuos kurie dalinasi iš 10 be liekanos)
+//  7,Atspausdinkite kas antrą skaičių nuo 10 iki 50. (porinius)
+//   Jei skaičius dalinasi iš 10 be liekanos jo nespausdinkite. ( naudokite continue.)
+//   (atspausdinti visus porinus skaičius, išskyrus tuos kurie dalinasi iš 10 be liekanos)
 
 //        for (int i = 10; i <= 50; i++) {
 //            if (i % 2 == 0 && i%10 !=0 ) {
@@ -113,14 +113,15 @@ public class Main {
         }
 
 
-//        Sukurkite ciklą kuris suktųsi nuo 0 iki 20.
+//      8.  Sukurkite ciklą kuris suktųsi nuo 0 iki 20.
 //        Suskaičiuokite, kiek kartų kintamasis i turėjo porinę reikšmę
+
         System.out.println("-----8------");
-        int a=0;
+        int a = 0;
 
-        for (int i = 0; i <=20; i++) {
+        for (int i = 0; i <= 20; i++) {
 
-            if (i % 2 == 0 ) {
+            if (i % 2 == 0) {
                 a++;
             }
 
@@ -128,27 +129,131 @@ public class Main {
         System.out.println("poriniu skaiciu reiksme kartais yra " + a);
 
 
-        System.out.println ("-----savarankiskai--");
+        System.out.println("-----savarankiskai--");
 
-        String week="";
-        for (int month = 1; month <=12; month++) {
-            System.out.println( "menuo" + month);
-            for (int i = 1; i <=30; i++) {
-                week = week + " " +i;
+        String week = "";
+        for (int month = 1; month <= 12; month++) {
+            System.out.println("menuo" + month);
+            for (int i = 1; i <= 30; i++) {
+                week = week + " " + i;
 
                 if (i % 7 == 0) {
-                    System.out.println( week);
+                    System.out.println(week);
                     week = " ";
                 }
+            }
+        }
+        System.out.println("--------------------");
+//9. Suskaičiuokite kiek 3čio uždavinio masyve yra žodžių trumpesnių nei 5 simboliai,
+// ir kiek ilgesnių nei 7 simboliai. (du skaičiavimai)
+
+
+        System.out.println("-----9------");
+        // System.out.println(plants[i]);
+        // System.out.println(plants[i].length());
+
+        int count7 =0;
+        int count5 = 0;
+        System.out.println(plants[0].length());
+
+        for (int i = 0; i < plants.length; i++) {
+        }
+
+        for (int i = 0; i < plants.length; i++) {
+            if (plants[i].length() < 5 ) {
+                count5++;
+            }
+            if (plants[i].length() > 7 ) {
+                count7++;
             }
         }
 
 
 
 
+        System.out.println("zodziu su maziau nei 5 simboliais yra  " + count5);
+        System.out.println("zodziu su daugiau  nei 7 simboliais yra  " + count7);
 
 
-}
+
+        System.out.println("--------------");
+
+//Suskaičiuokite kiek 3čio uždavinio masyve yra žodžių ilgesnių nei 5 simboliai bet trumpesnių
+// nei 10 simboliai.
+// (tarp 5 ir 10 simbolių ilgio)
+
+        System.out.println("--------10---------");
+
+        int countnew = 0;
+
+        System.out.println(plants[0].length());
+
+        for (int i = 0; i < plants.length; i++) {
+            if (plants[i].length() > 5 && plants[i].length() < 10) {
+                countnew++;
+            }
+        }
+
+        System.out.println("zodziai reziuose yra " + countnew);
+
+//        Sugeneruokite 300 atsitiktinių skaičių nuo 0 iki 300,
+//            atspausdinkite juos atskirtus tarpais ir suskaičiuokite kiek tarp jų yra
+//        didesnių už 150.
+//        Skaičiai didesni nei 275 turi būti atspausdinti skliausteliuose” [ ] “
+
+        System.out.println("--------sunkesni-1---------");
+        int count = 0;
+        for (int i = 0; i < 300; i++) {
+            int randomNum =(int) (Math. random() * 300  );
+
+            if(randomNum > 150) {
+                count++;
+            }
+            if (randomNum > 275) {
+                System.out.print("[" + randomNum + "] ");
+            }else {
+                System.out.print(randomNum + " ");
+            }
+        }
+
+        System.out.println();
+        System.out.println(count);
+
+
+
+
+
+
+
+
+//        sunkesni 2
+
+//        Vienoje eilutėje atspausdinkite visus skaičius nuo 1 iki 3000,
+//        kurie dalijasi iš 77 be liekanos.
+//        Skaičius atskirkite kableliais.
+//        Po paskutinio skaičiaus kablelio neturi būti.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
 }
 
 
