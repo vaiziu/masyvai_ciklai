@@ -292,7 +292,7 @@ String result = "";
 //Tris kartus iš eilės iškritus herbui;
 
 
-
+dkjdkjgkj
 
 
 
