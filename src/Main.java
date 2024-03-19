@@ -282,6 +282,8 @@ String result = "";
             System.out.println();
         }
 
+
+        System.out.println("--------sunkesni-5---------");
 //Metam monetą. Monetos kritimo rezultatą imituojam Math.random() funkcija,
 // kur 0 yra herbas, o 1 - skaičius.
 // Monetos metimo rezultatus išvedame į ekraną atskiroje eilutėje:
@@ -292,8 +294,24 @@ String result = "";
 //Tris kartus iš eilės iškritus herbui;
 
 
-dkjdkjgkj
 
+
+
+        System.out.println("-------------------------------------");
+        System.out.println("--------sunkesni-8---------");
+//        Sumodeliuokite vinies kalimą.
+//        Įkalimo gylį sumodeliuokite pasinaudodami Math.random() funkcija.
+//        Vinies ilgis 8.5cm (pilnai sulenda į lentą).
+//  “Įkalkite” 5 vinis mažais smūgiais. Vienas smūgis vinį įkala 5-20 mm.
+//   Suskaičiuokite kiek reikia smūgių.
+//  “Įkalkite” 5 vinis dideliais smūgiais.
+//  Vienas smūgis vinį įkala 20-30 mm, bet yra 50% tikimybė (pasinaudokite Math.random()
+
+        int minVin=5;
+        int maxVIN =20;
+        int longvin = 85;
+        int smugis = (int) (minVin + Math.random()*(maxVIN-minVin));
+        System.out.println(smugis);
 
 
 
