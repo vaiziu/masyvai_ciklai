@@ -282,8 +282,14 @@ String result = "";
             System.out.println();
         }
 
-
-
+//Metam monetą. Monetos kritimo rezultatą imituojam Math.random() funkcija,
+// kur 0 yra herbas, o 1 - skaičius.
+// Monetos metimo rezultatus išvedame į ekraną atskiroje eilutėje:
+// “S” jeigu iškrito skaičius ir “H” jeigu herbas.
+// Suprogramuokite tris skirtingus scenarijus kai monetos metimą stabdome:
+//Iškritus herbui;
+//Tris kartus iškritus herbui;
+//Tris kartus iš eilės iškritus herbui;
 
 
 
